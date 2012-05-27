@@ -9,6 +9,7 @@ def print_in_fours( array )
 		array_of_four.push x
 		if array_of_four.length == 4
 			print_with_space array_of_four
+			puts
 			array_of_four.clear
 		end
 	end
@@ -18,6 +19,5 @@ def print_with_space(array)
 	array.each do |x|
 		print "#{x} "
 	end
-	puts
 end
 print_in_fours array
