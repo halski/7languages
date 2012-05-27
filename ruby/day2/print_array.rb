@@ -8,16 +8,14 @@ def print_in_fours( array )
 	array.each do |x|
 		array_of_four.push x
 		if array_of_four.length == 4
-			print_with_space array_of_four
-			puts
+			p array_of_four
 			array_of_four.clear
 		end
 	end
 end
-
-def print_with_space(array)
-	array.each do |x|
-		print "#{x} "
-	end
-end
 print_in_fours array
+
+# same using each_slice
+
+puts 'The same using each_slice:'
+array.each_slice(4) { |x| p x }
