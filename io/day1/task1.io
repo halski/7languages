@@ -9,7 +9,7 @@ Animal init := method(name, age,
 Dog := Animal clone;
 Dog breed ::= "";
 Dog print := method(
-	breed println;
+	"Breed" breed println;
 	age println;
 	name println;
 );
